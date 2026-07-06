@@ -35,7 +35,7 @@ export async function updateAvatar(
   var form = new FormData();
   form.append("avatar", avatar);
 
-  var r = await fetch(getBasePath() + privateProfileUpdate, {
+  var r = await fetch(getBasePath() + privateAvatarUpdate, {
     method: "POST",
     body: form,
     headers: {
